@@ -1,0 +1,11 @@
+A simple script to read dpkg package lists.
+
+1. Create two package lists with `dpkg -l`:
+
+    % dpkg -l > old
+    ... time passes ...
+    % dpkg -l > new
+
+2. Run summary.py on the package lists:
+
+    python summary.py old new
